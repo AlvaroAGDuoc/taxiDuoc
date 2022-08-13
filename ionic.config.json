@@ -1,0 +1,7 @@
+{
+  "name": "taxiDuoc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
