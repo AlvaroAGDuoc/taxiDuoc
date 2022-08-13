@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img
+      src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2016/09/569465-whatsapp-que-tus-contactos-ponen-rana-perfil.jpg?itok=tpvHWpeZ"
+    />
+    <ion-card-header>
+      <ion-text color="dark">
+        <h3>Nombre: Juan Perez</h3>
+      </ion-text>
+      <ion-text color="dark">
+        <h3>Email: juan@gmail.com</h3>
+      </ion-text>
+      <ion-text color="dark">
+        <h3>Telefono: 32324234</h3>
+      </ion-text>
+      <ion-text color="dark">
+        <h3>Sede: Plaza Norte</h3>
+      </ion-text>
+      <ion-button
+        [routerLink]="['/pantalla-principal']"
+        size="default"
+        expand="full"
+        color="tertiary"
+        >Modificar perfil</ion-button
+      >
+    </ion-card-header>
+  </ion-card>
+</ion-content>
