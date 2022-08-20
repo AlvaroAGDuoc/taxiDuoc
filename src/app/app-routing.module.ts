@@ -42,6 +42,22 @@ const routes: Routes = [
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+  {
+    path: 'registro-vehiculo',
+    loadChildren: () => import('./pages/registro-vehiculo/registro-vehiculo.module').then( m => m.RegistroVehiculoPageModule)
+  },
+  {
+    path: 'lista-vehiculo',
+    loadChildren: () => import('./pages/lista-vehiculo/lista-vehiculo.module').then( m => m.ListaVehiculoPageModule)
+  },
+  {
+    path: 'preguntas-frecuentes',
+    loadChildren: () => import('./pages/preguntas-frecuentes/preguntas-frecuentes.module').then( m => m.PreguntasFrecuentesPageModule)
+  },
+  {
+    path: 'viaje',
+    loadChildren: () => import('./pages/viaje/viaje.module').then( m => m.ViajePageModule)
+  },
 ];
 
 @NgModule({

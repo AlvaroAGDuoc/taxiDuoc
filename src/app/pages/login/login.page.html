@@ -7,23 +7,34 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input type="email"></ion-input>
-  </ion-item>
+<ion-content class="fondo">
+  <img class="center" src="../../../assets/taxi.png" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingresa a tu cuenta</ion-card-title>
+    </ion-card-header>
 
-  <ion-item>
-    <ion-label position="floating">Clave</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+    <ion-card-content>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Usuario</ion-label>
+        <ion-input [(ngModel)]="usuario"></ion-input>
+      </ion-item>
 
-  <ion-button
-    [routerLink]="['/pantalla-principal']"
-    size="default"
-    expand="full"
-    color="tertiary"
-    >Conectarse</ion-button
-  >
-  <a href="">¿Olvidaste tu clave?</a>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Clave</ion-label>
+        <ion-input [(ngModel)]="contrasena" type="password"></ion-input>
+      </ion-item>
+      <ion-button expand="block"  (click)="pasarDatos()"
+        >Conectarse</ion-button
+      >
+
+      <div style="text-align: center">
+        <p>O</p>
+        <h6>¿No tienes una cuenta?</h6>
+        <a [routerLink]="['/registro']" class="quitarEstilo" href=""
+          >Registrate</a
+        >
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

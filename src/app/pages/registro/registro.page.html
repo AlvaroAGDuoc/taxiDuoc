@@ -7,52 +7,63 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-item>
-    <ion-label position="floating">Nombre completo</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+<ion-content class="fondo">
+  <img class="center" src="../../../assets/taxi.png" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
 
-  <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input type="email"></ion-input>
-  </ion-item>
+    <ion-card-content>
+      <ion-item>
+        <ion-label class="blanco" position="floating"
+          >Nombre completo</ion-label
+        >
+        <ion-input></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Telefono</ion-label>
-    <ion-input type="number"></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Clave</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Telefono</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Repetir clave</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Clave</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Foto de perfil</ion-label>
-    <ion-input type="photo"></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Repetir clave</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
 
-  <ion-list>
-    <ion-item>
-      <ion-select placeholder="Sede">
-        <ion-select-option value="apples">Plaza Norte</ion-select-option>
-        <ion-select-option value="oranges">San Bernardo</ion-select-option>
-        <ion-select-option value="bananas">Puente Alto</ion-select-option>
-      </ion-select>
-    </ion-item>
-  </ion-list>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Foto de perfil</ion-label>
+        <ion-input type="photo"></ion-input>
+      </ion-item>
 
-  <ion-button
-    [routerLink]="['/pantalla-principal']"
-    size="default"
-    expand="full"
-    color="tertiary"
-    >Registrarse</ion-button
-  >
+      <ion-list>
+        <ion-item class="select">
+          <ion-select  placeholder="Sede">
+            <ion-select-option value="apples">Plaza Norte</ion-select-option>
+            <ion-select-option value="oranges">San Bernardo</ion-select-option>
+            <ion-select-option value="bananas">Puente Alto</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-button [routerLink]="['/pantalla-principal']" expand="block"
+        >Registrarse</ion-button
+      >
+      <div style="text-align: center">
+
+        <p class="p2">Al hacer clic en Registrarse, acepta nuestros <a class="quitarEstilo">Términos</a> y <a class="quitarEstilo">Política de privacidad.</a></p>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

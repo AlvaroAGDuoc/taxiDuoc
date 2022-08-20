@@ -5,22 +5,22 @@
 </ion-header>
 
 <ion-content>
-  <ion-img src="../../../assets/mapa.jpg"></ion-img>
-
   <ion-tabs>
+    <img src="../../../assets/mapa.jpg" height="700px" />
+
     <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="about">
+      <ion-tab-button [routerLink]="['/preguntas-frecuentes']" tab="about">
         <ion-icon name="information-circle"></ion-icon>
-        <ion-label>Contacto</ion-label>
+        <ion-label>Preguntas</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button tab="schedule">
+      <ion-tab-button [routerLink]="['/viaje']" tab="schedule">
         <ion-icon name="car-sport-outline"></ion-icon>
         <ion-label>Viajar</ion-label>
         <ion-badge>6</ion-badge>
       </ion-tab-button>
 
-      <ion-tab-button [routerLink]="['/perfil']" tab="speakers">
+      <ion-tab-button (click)="pasarDatos()" tab="speakers">
         <ion-icon name="person-circle"></ion-icon>
         <ion-label>Perfil</ion-label>
       </ion-tab-button>

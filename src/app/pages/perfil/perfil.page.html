@@ -14,7 +14,7 @@
     />
     <ion-card-header>
       <ion-text color="dark">
-        <h3>Nombre: Juan Perez</h3>
+        <h3>Nombre: {{us}}</h3>
       </ion-text>
       <ion-text color="dark">
         <h3>Email: juan@gmail.com</h3>
@@ -26,12 +26,33 @@
         <h3>Sede: Plaza Norte</h3>
       </ion-text>
       <ion-button
-        [routerLink]="['/pantalla-principal']"
+        [routerLink]="['/lista-vehiculo']"
         size="default"
         expand="full"
         color="tertiary"
         >Modificar perfil</ion-button
       >
     </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle
+        >¿Quieres ser un conductor voluntario?
+      </ion-card-subtitle>
+      <ion-card-title>¡Registra tu auto aquí!</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile, and
+      climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+    <ion-button
+      [routerLink]="['/registro-vehiculo']"
+      size="default"
+      expand="full"
+      color="tertiary"
+      >Agregar vehiculo</ion-button
+    >
   </ion-card>
 </ion-content>
