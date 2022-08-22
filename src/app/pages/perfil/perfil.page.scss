@@ -1,0 +1,27 @@
+.fondo {
+    --background: #4f2c80;
+  }
+
+  ion-card {
+    --background: #121212;
+  }
+
+
+  ion-card-subtitle,
+  ion-card-title {
+    color: #e8bffd;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  ion-button {
+    margin-top: 20px;
+    --color: #fffeff;
+    --background: #4f2e7f;
+  
+    --background-hover-opacity: 20%;
+  }
+
+  .blanco {
+    color: #e8bffd;
+  }

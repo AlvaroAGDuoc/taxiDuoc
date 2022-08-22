@@ -9,18 +9,6 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'menu-inicio',
-    pathMatch: 'full',
-  },
-  {
-    path: 'menu-inicio',
-    loadChildren: () =>
-      import('./pages/menu-inicio/menu-inicio.module').then(
-        (m) => m.MenuInicioPageModule
-      ),
-  },
-  {
-    path: 'login',
     loadChildren: () =>
       import('./pages/login/login.module').then((m) => m.LoginPageModule),
   },

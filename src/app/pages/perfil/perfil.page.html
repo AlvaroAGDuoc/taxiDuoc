@@ -7,29 +7,28 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="fondo">
   <ion-card>
     <img
       src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2016/09/569465-whatsapp-que-tus-contactos-ponen-rana-perfil.jpg?itok=tpvHWpeZ"
     />
     <ion-card-header>
       <ion-text color="dark">
-        <h3>Nombre: {{us}}</h3>
+        <p class="blanco">Nombre: {{us}}</p>
       </ion-text>
       <ion-text color="dark">
-        <h3>Email: juan@gmail.com</h3>
+        <p class="blanco">Email: juan@gmail.com</p>
       </ion-text>
       <ion-text color="dark">
-        <h3>Telefono: 32324234</h3>
+        <p class="blanco">Telefono: 32324234</p>
       </ion-text>
       <ion-text color="dark">
-        <h3>Sede: Plaza Norte</h3>
+        <p class="blanco">Sede: Plaza Norte</p>
       </ion-text>
       <ion-button
         [routerLink]="['/lista-vehiculo']"
         size="default"
-        expand="full"
-        color="tertiary"
+        expand="block"
         >Modificar perfil</ion-button
       >
     </ion-card-header>
@@ -44,14 +43,11 @@
     </ion-card-header>
 
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile, and
-      climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
     <ion-button
       [routerLink]="['/registro-vehiculo']"
       size="default"
-      expand="full"
-      color="tertiary"
+      expand="block"
       >Agregar vehiculo</ion-button
     >
   </ion-card>
