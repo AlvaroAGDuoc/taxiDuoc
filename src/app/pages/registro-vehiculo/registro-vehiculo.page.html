@@ -7,47 +7,49 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-content>
-    <ion-text color="dark">
-      <h1 style="text-align: center">Registro vehiculo</h1>
-    </ion-text>
-    <ion-item>
-      <ion-label position="floating">Patente</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
+<ion-content class="fondo">
 
-    <ion-item>
-      <ion-label position="floating">Modelo</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registra tu auto</ion-card-title>
+    </ion-card-header>
 
-    <ion-item>
-      <ion-label position="floating">Marca</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
+    <ion-card-content>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Patente</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label position="floating">Color</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Modelo</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label position="floating">Número de asientos</ion-label>
-      <ion-input type="number"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Marca</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label>Adjuntar documentos</ion-label>
-      <ion-input type="photo"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Color</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
-    <ion-button
-      [routerLink]="['/pantalla-principal']"
-      size="default"
-      expand="full"
-      color="tertiary"
-      >Registrar vehiculo</ion-button
-    >
-  </ion-content>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Numero de asientos</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="blanco" position="floating">Adjuntar documentos</ion-label>
+        <ion-input type="photo"></ion-input>
+      </ion-item>
+
+
+      <ion-button [routerLink]="['/pantalla-principal']" expand="block">Registrar</ion-button>
+      <p class="p2">Se validaran los datos dentro de 3 dias habiles. Para más información <a class="quitarEstilo">Ingresa aquí.</a> </p>
+    </ion-card-content>
+  </ion-card>
+
+
 </ion-content>
