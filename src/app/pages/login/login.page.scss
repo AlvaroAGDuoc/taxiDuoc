@@ -18,7 +18,7 @@ ion-card {
 
 ion-card-subtitle,
 ion-card-title {
-  color: #e8bffd;
+  color: #ffffff;
   font-size: 20px;
   text-align: center;
 }
@@ -27,9 +27,16 @@ ion-item {
   --background: ;
 }
 
+.hr {
+  border-bottom: 1px solid rgb(231, 231, 231);
+  margin: 10px 0;
+  width: 100%;
+}
+
 .blanco {
   color: $blanco;
 }
+
 .fondo {
   --background: #4f2c80;
 }
@@ -45,6 +52,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 .quitarEstilo {
   text-decoration: none;
   font-weight: bold;

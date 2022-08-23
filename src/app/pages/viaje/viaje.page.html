@@ -8,37 +8,43 @@
 </ion-header>
 
 <ion-content class="fondo">
-  <h4 class="texto">Elige la direccion donde quieras ir para buscar autos disponibles</h4>
-  <ion-searchbar></ion-searchbar>
-  <div class="card">
-  <ion-list>
-    <ion-list-header> Vehiculos disponibles </ion-list-header>
+  
+  <h5 class="titulo">Conductores cercanos a ti</h5>
 
-    <ion-item>
-      <ion-avatar slot="start">
-        <ion-icon name="car-sport-outline"></ion-icon>
-      </ion-avatar>
-      <ion-label>
-        <h1>Juan Perez</h1>
-        <h2>Audi RX300</h2>
-        <h3>CL45 644</h3>
-        <h3>4 asientos disponibles</h3>
-      </ion-label>
-      <ion-button color="success">Tomar auto</ion-button>
-    </ion-item>
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-title>Juan Perez</ion-card-title>
+      <img src="https://p19-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/532c72eb3ceecd8535d16e2cadfaae01~c5_720x720.jpeg?x-expires=1661241600&x-signature=VCZ7xNkSAQCs6d4nqqJShI6g5Cg%3D">
 
-    <ion-item>
-      <ion-avatar slot="start">
-        <ion-icon name="car-sport-outline"></ion-icon>
-      </ion-avatar>
-      <ion-label>
-        <h1>Juan Carlos</h1>
-        <h2>Audi RX320</h2>
-        <h3>SD45 423</h3>
-        <h3>1 asiento disponible</h3>
-      </ion-label>
-      <ion-button color="success">Tomar auto</ion-button>
-    </ion-item>
-  </ion-list>
-</div>
+      <h3>Datos del conductor</h3>
+      <hr class="hr">
+    </ion-card-header>
+      
+      
+    <ion-card-content>
+      <p>Audi RX320</p>
+      <p>SD45 423</p>
+      <p>Color rojo</p>
+      <p>1 asiento disponible</p>
+      <ion-button [routerLink]="['/pantalla-principal']" expand="block">Ver recorrido</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Juan Carlos</ion-card-title>
+      <img src="https://essereuomo.it/wp-content/uploads/2021/10/sdsdsd-888x1024.jpg">
+    </ion-card-header>
+      <p>Audi RX320</p>
+      <p>SD45 423</p>
+      <p>Color azul</p>
+      <p>1 asiento disponible</p>
+    <ion-card-content>
+
+      <ion-button [routerLink]="['/pantalla-principal']" expand="block">Tomar auto</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <div class="footer"></div>
 </ion-content>
