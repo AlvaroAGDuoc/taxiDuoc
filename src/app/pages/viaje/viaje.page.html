@@ -8,25 +8,26 @@
 </ion-header>
 
 <ion-content class="fondo">
-  
+
   <h5 class="titulo">Conductores cercanos a ti</h5>
 
   <ion-card>
-    
+
     <ion-card-header>
       <ion-card-title>Juan Perez</ion-card-title>
-      <img src="https://p19-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/532c72eb3ceecd8535d16e2cadfaae01~c5_720x720.jpeg?x-expires=1661241600&x-signature=VCZ7xNkSAQCs6d4nqqJShI6g5Cg%3D">
+      <img
+        src="https://p19-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/532c72eb3ceecd8535d16e2cadfaae01~c5_720x720.jpeg?x-expires=1661241600&x-signature=VCZ7xNkSAQCs6d4nqqJShI6g5Cg%3D">
 
       <h3>Datos del conductor</h3>
       <hr class="hr">
     </ion-card-header>
-      
-      
+
+
     <ion-card-content>
-      <p>Audi RX320</p>
-      <p>SD45 423</p>
-      <p>Color rojo</p>
-      <p>1 asiento disponible</p>
+      <p>Auto: Audi RX320</p>
+      <p>Patente del auto: SD45 423</p>
+      <p>Color auto: Color rojo</p>
+      <p>Asientos disponibles: <a class="quitarEstilo">1</a></p>
       <ion-button [routerLink]="['/pantalla-principal']" expand="block">Ver recorrido</ion-button>
     </ion-card-content>
 
@@ -39,13 +40,13 @@
       <h3>Datos del conductor</h3>
       <hr class="hr">
     </ion-card-header>
-      <p>Audi RX320</p>
-      <p>SD45 423</p>
-      <p>Color azul</p>
-      <p>1 asiento disponible</p>
-    <ion-card-content>
 
-      <ion-button [routerLink]="['/pantalla-principal']" expand="block">Tomar auto</ion-button>
+    <ion-card-content>
+      <p>Auto: Audi RX320</p>
+      <p>Patente del auto: SD45 423</p>
+      <p>Color auto: azul</p>
+      <p>Asientos disponibles: <a class="quitarEstilo">2</a></p>
+      <ion-button [routerLink]="['/pantalla-principal']" expand="block">Ver recorrido</ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>

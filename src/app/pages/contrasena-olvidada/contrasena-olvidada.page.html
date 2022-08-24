@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>contrasenaOlvidada</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+  <img class="center" src="../../../assets/taxi.png" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Recupera tu clave</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Ingresa tu CORREO y te enviaremos un codigo a la dirección que ingresaste.</p>
+      <ion-item>
+        <ion-label class="blanco" position="floating">Correo electronico</ion-label>
+        <ion-input [(ngModel)]="usuario"></ion-input>
+      </ion-item>
+
+      
+      <ion-button expand="block"  (click)="pasarDatos()"
+        >Enviar codigo</ion-button
+      >
+      <p></p>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

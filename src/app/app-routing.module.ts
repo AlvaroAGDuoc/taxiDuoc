@@ -53,6 +53,10 @@ const routes: Routes = [
     path: 'modificar-perfil',
     loadChildren: () => import('./pages/modificar-perfil/modificar-perfil.module').then( m => m.ModificarPerfilPageModule)
   },
+  {
+    path: 'contrasena-olvidada',
+    loadChildren: () => import('./pages/contrasena-olvidada/contrasena-olvidada.module').then( m => m.ContrasenaOlvidadaPageModule)
+  },
 
 ];
 
