@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>registro</ion-title>
+    <ion-title>modificarPerfil</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -8,11 +8,8 @@
 </ion-header>
 
 <ion-content class="fondo">
-  <img class="center" src="../../../assets/taxi.png" />
+
   <ion-card>
-    <ion-card-header>
-      <ion-card-title>Registro</ion-card-title>
-    </ion-card-header>
 
     <ion-card-content>
       <ion-item>
@@ -33,36 +30,26 @@
       </ion-item>
 
       <ion-item>
-        <ion-label class="blanco" position="floating">Clave</ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label class="blanco" position="floating">Repetir clave</ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
-
-      <ion-item>
         <ion-label class="blanco" position="floating">Foto de perfil</ion-label>
         <ion-input type="photo"></ion-input>
       </ion-item>
 
-
-        <ion-item class="select" >
-          <ion-select placeholder="Sede">
+      <ion-list>
+        <ion-item class="select">
+          <ion-select  placeholder="Sede">
             <ion-select-option value="apples">Plaza Norte</ion-select-option>
             <ion-select-option value="oranges">San Bernardo</ion-select-option>
             <ion-select-option value="bananas">Puente Alto</ion-select-option>
           </ion-select>
         </ion-item>
+      </ion-list>
 
       <ion-button [routerLink]="['/pantalla-principal']" expand="block"
-        >Registrarse</ion-button
+        >Modificar perfil</ion-button
       >
       <div style="text-align: center">
-
-        <p class="p2">Al hacer clic en Registrarse, acepta nuestros <a class="quitarEstilo">Términos</a> y <a class="quitarEstilo">Política de privacidad.</a></p>
       </div>
     </ion-card-content>
   </ion-card>
+
 </ion-content>

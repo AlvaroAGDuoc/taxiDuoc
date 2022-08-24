@@ -1,0 +1,32 @@
+.fondo {
+    --background: #202020;
+}
+
+ion-item {
+    --background: ;
+}
+
+ion-input{
+    color: white;
+}
+
+.blanco {
+    color: #ffff;
+    text-align: center;
+    font-size: 15px;
+}
+
+ion-searchbar{
+    --background:#4f2e7f;
+    --color: #fffeff;
+}
+
+ion-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    --color: #fffeff;
+    --background: #4f2e7f;
+
+    --background-hover-opacity: 20%;
+
+}

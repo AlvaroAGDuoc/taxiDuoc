@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>crearRuta</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+
+  <h1 class="blanco">Selecciona tu destino</h1>
+  <ion-searchbar></ion-searchbar>
+
+  <img src="../../../assets/ruta.jpg">
+
+  <ion-item>
+    <ion-label class="blanco" position="floating">Precio de la ruta</ion-label>
+    <ion-input type="number" ></ion-input>
+  </ion-item>
+
+
+  <ion-button [routerLink]="['/pantalla-principal']" expand="block">Crear ruta</ion-button>
+
+
+</ion-content>

@@ -7,32 +7,56 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header> Vehiculos registrados </ion-list-header>
+<ion-content class="fondo">
 
-    <ion-item>
-      <ion-avatar slot="start">
-        <ion-icon name="car-sport-outline"></ion-icon>
-      </ion-avatar>
-      <ion-label>
-        <h2>Audi RX300</h2>
-        <h3>CL45 644</h3>
-        <h3>4 asientos</h3>
-      </ion-label>
-      <ion-button color="danger">X</ion-button>
-    </ion-item>
+  <h4 class="textoRosado">Tus autos</h4>
 
-    <ion-item>
-      <ion-avatar slot="start">
-        <ion-icon name="car-sport-outline"></ion-icon>
-      </ion-avatar>
-      <ion-label>
-        <h2>Audi RX320</h2>
-        <h3>SD45 423</h3>
-        <h3>4 asientos</h3>
-      </ion-label>
-      <ion-button color="danger">X</ion-button>
-    </ion-item>
-  </ion-list>
+  <ion-card>
+
+    <ion-card-header>
+
+      <img
+        src="https://awscdn.audi.cl/media/Theme_Menu_Model_Dropdown_Item_Image_Component/root-cl-model-modelMenu-editableItems-7454-dropdown-333068-image/dh-487-a0e9a6/dd16a581/1657267468/menue.jpg">
+
+      <h3>Información del auto</h3>
+      <hr class="hr">
+    </ion-card-header>
+
+
+    <ion-card-content>
+      <p>Marca: Audi </p>
+      <p>Modelo: RX320 </p>
+      <p>Patente: SD45 423</p>
+      <p>Color: Gris oscuro</p>
+      <p>Capacidad: 4 asientos</p>
+      <ion-button [routerLink]="['/pantalla-principal']" expand="block">Dar de baja</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+  <!--SEGUNDA CARTA-->
+  <ion-card>
+
+    <ion-card-header>
+
+      <img
+        src="https://awscdn.audi.cl/media/Theme_Menu_Model_Dropdown_Item_Image_Component/root-cl-model-modelMenu-editableItems-7454-dropdown-333068-image/dh-487-a0e9a6/dd16a581/1657267468/menue.jpg">
+
+      <h3>Información del auto</h3>
+      <hr class="hr">
+    </ion-card-header>
+
+
+    <ion-card-content>
+      <p>Marca: Audi </p>
+      <p>Modelo: RX320 </p>
+      <p>Patente: SD45 423</p>
+      <p>Color: Gris oscuro</p>
+      <p>Capacidad: 4 asientos</p>
+      <ion-button [routerLink]="['/pantalla-principal']" expand="block">Dar de baja</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+  
 </ion-content>

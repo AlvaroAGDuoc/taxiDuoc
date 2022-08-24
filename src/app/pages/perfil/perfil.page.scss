@@ -1,5 +1,5 @@
 .fondo {
-  --background: #4f2c80;
+  --background: #202020;
 }
 
 .blanco {
@@ -16,9 +16,16 @@ img{
   width: 150px;
 }
 
-ion-card {
-  --background: #121212;
+ion-card,
+ion-card-content {
+    --background: #121212;
 }
+
+
+ion-item {
+    --background: ;
+}
+
 
 
 ion-card-subtitle,
@@ -30,8 +37,16 @@ ion-card-title {
 
 ion-button {
   margin-top: 20px;
+  margin-bottom: 10px;
   --color: #fffeff;
   --background: #4f2e7f;
 
   --background-hover-opacity: 20%;
+
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 15px;
 }
