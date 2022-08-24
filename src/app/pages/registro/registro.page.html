@@ -43,9 +43,9 @@
       </ion-item>
 
       <ion-item>
-        <ion-label class="blanco" position="floating">Foto de perfil</ion-label>
-        <ion-input type="photo"></ion-input>
+        <ion-button expand="block" (click)="obtenerFoto()">Subir foto</ion-button>
       </ion-item>
+      <img [src]="imagenSeleccionada?.webPath">
 
 
         <ion-item class="select" >
