@@ -10,7 +10,7 @@
 <ion-content class="fondo">
   <ion-card>
     <img
-      src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2016/09/569465-whatsapp-que-tus-contactos-ponen-rana-perfil.jpg?itok=tpvHWpeZ" />
+      src= "{{this.usuario.imagen.dataUrl}}" />
     <ion-card-header>
 
       <h3>Mis datos personales</h3>
@@ -18,10 +18,10 @@
     </ion-card-header>
 
     <ion-card-content>
-      <p>Nombre: {{us}}</p>
-      <p>Email: juan@gmail.com</p>
-      <p>Telefono: 32324234</p>
-      <p>Sede: Plaza Norte</p>
+      <p>Nombre: {{this.usuario.nombre}}</p>
+      <p>Email: {{this.usuario.email}}</p>
+      <p>Telefono: {{this.usuario.telefono}}</p>
+      <p>Sede: {{this.usuario.sede}}</p>
       <ion-button [routerLink]="['/modificar-perfil']" size="default" expand="block">Modificar perfil</ion-button>
       <ion-button size="default" expand="block" [routerLink]="['/lista-vehiculo']">Ver mis vehiculos</ion-button>
 

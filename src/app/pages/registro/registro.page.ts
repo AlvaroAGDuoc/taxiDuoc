@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationExtras } from '@angular/router';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { Capacitor } from '@capacitor/core';
 
@@ -9,17 +10,23 @@ import { Capacitor } from '@capacitor/core';
 })
 export class RegistroPage implements OnInit {
 
-
   imagenSeleccionada: any;
 
+  usuario: any = {
+    nombre: "",
+    email: "",
+    telefono: "",
+    clave: "",
+    imagen: "",
+    sede: ""
+  }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   checkPlatformForWeb() {
     if (Capacitor.getPlatform() == 'web') return true;
     return false;
   }
-
 
  async obtenerFoto() {
     const imagen = await Camera.getPhoto({
@@ -31,7 +38,20 @@ export class RegistroPage implements OnInit {
     });
     this.imagenSeleccionada = imagen;
     if(this.checkPlatformForWeb()) this.imagenSeleccionada.webPath = imagen.dataUrl;
+  }
 
+  pasarDatos() {
+    let navigationExtras: NavigationExtras = {
+      state: {
+        nombre: this.usuario.nombre,
+        email: this.usuario.email,
+        telefono: this.usuario.telefono,
+        contra: this.usuario.clave,
+        imagen: this.imagenSeleccionada,
+        sede: this.usuario.sede
+      }
+    }
+    this.router.navigate(['/pantalla-principal'], navigationExtras);
   }
 
   ngOnInit() {

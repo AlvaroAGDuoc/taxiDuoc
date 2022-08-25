@@ -17,24 +17,23 @@
     <ion-card-content>
       <ion-item>
         <ion-label class="blanco" position="floating"
-          >Nombre completo</ion-label
-        >
-        <ion-input></ion-input>
+          >Nombre completo</ion-label>
+        <ion-input [(ngModel)]="usuario.nombre"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label class="blanco" position="floating">Email</ion-label>
-        <ion-input type="email"></ion-input>
+        <ion-input [(ngModel)]="usuario.email" type="email"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label class="blanco" position="floating">Telefono</ion-label>
-        <ion-input type="number"></ion-input>
+        <ion-input [(ngModel)]="usuario.telefono" type="number"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label class="blanco" position="floating">Clave</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="usuario.contra" type="password"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -49,14 +48,14 @@
 
 
         <ion-item class="select" >
-          <ion-select placeholder="Sede">
-            <ion-select-option value="apples">Plaza Norte</ion-select-option>
-            <ion-select-option value="oranges">San Bernardo</ion-select-option>
-            <ion-select-option value="bananas">Puente Alto</ion-select-option>
+          <ion-select [(ngModel)]="usuario.sede" placeholder="Sede">
+            <ion-select-option value="Plaza Norte">Plaza Norte</ion-select-option>
+            <ion-select-option value="San Bernardo">San Bernardo</ion-select-option>
+            <ion-select-option value="Puente Alto">Puente Alto</ion-select-option>
           </ion-select>
         </ion-item>
 
-      <ion-button [routerLink]="['/pantalla-principal']" expand="block"
+      <ion-button (click)="pasarDatos()" expand="block"
         >Registrarse</ion-button
       >
       <div style="text-align: center">

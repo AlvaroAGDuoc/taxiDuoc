@@ -10,16 +10,22 @@ import { AlertController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
-  usuario: string = '';
-  contrasena: string = '';
+  usuario: any = {
+    nombre: "Juan Perez",
+    email: "",
+    telefono: "932345678",
+    clave: "",
+    imagen: "../../../assets/foto.jpg",
+    sede: "Plaza Norte"
+  }
 
   constructor(private router: Router, private alertController: AlertController){}
 
   async presentAlert() {
     const alert = await this.alertController.create({
-      header: 'Alert',
-      message: 'This is an alert!',
-      buttons: ['a'],
+      header: 'Error',
+      message: 'Email o clave incorrectas',
+      buttons: ['Aceptar'],
     });
 
     await alert.present();
@@ -28,12 +34,16 @@ export class LoginPage implements OnInit {
   pasarDatos() {
     let navigationExtras: NavigationExtras = {
       state: {
-        usu: this.usuario,
-        contra: this.contrasena
+        nombre: this.usuario.nombre,
+        email: this.usuario.email,
+        telefono: this.usuario.telefono,
+        contra: this.usuario.clave,
+        imagen: this.usuario.imagen,
+        sede: this.usuario.sede
       }
     };
 
-    if(navigationExtras.state.usu === 'juan' && navigationExtras.state.contra === '123') {
+    if(navigationExtras.state.email === 'juanp@duocuc.cl' && navigationExtras.state.contra === '123') {
       this.router.navigate(['/pantalla-principal'], navigationExtras);
     }
     else{

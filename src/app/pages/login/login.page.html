@@ -16,13 +16,13 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-label class="blanco" position="floating">Usuario</ion-label>
-        <ion-input [(ngModel)]="usuario"></ion-input>
+        <ion-label class="blanco" position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="usuario.email"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label class="blanco" position="floating">Clave</ion-label>
-        <ion-input [(ngModel)]="contrasena" type="password"></ion-input>
+        <ion-input [(ngModel)]="usuario.clave" type="password"></ion-input>
       </ion-item>
       <ion-button expand="block"  (click)="pasarDatos()"
         >Conectarse</ion-button
